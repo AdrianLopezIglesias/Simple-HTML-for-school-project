@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>La Soja (Glycine max)</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <style>
+        @charset "utf-8";
+        #customers {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        #customers td,
+        #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        
+        #customers tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        #customers tr:hover {
+            background-color: #ddd;
+        }
+        
+        #customers th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #1abc9c;
+            color: white;
+        }
+        
+        input[type=text],
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        input[type=date] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        input[type=button] {
+            width: 100%;
+            background-color: #1abc9c;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+        }
+        
+        .button {
+            width: 100%;
+            background-color: #1abc9c;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+        }
+        
+        input[type=submit]:hover {
+            background-color: #1abc9c;
+        }
+    </style>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>La Soja (Glycine max)</h1>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html">Acerca</a>
+        <a href="consumo.html">Como consumirla</a>
+        <a href="propiedades.html">Propiedades</a>
+        <a href="lista.html">Lista</a>
+    </div>
+
+    <!-- The flexible grid (content) -->
+    <div class="row">
+        <div class="side">
+            <h2>Nueva tarea</h2>
+            <script src="storage.js"></script>
+            <section id="">
+                <form name="formulario">
+                    <input type="text" name="id" id="id" placeholder="ID">
+                    <br>
+                    <br>
+                    <input type="text" name="descripcion" id="descripcion" placeholder="Descripción">
+                    <br>
+                    <br>
+                    <select name="urgencia" id="urgencia">
+                    <option value="Muy urgente">Muy urgente</option>
+                    <option value="Urgente">Urgente</option>
+                    <option value="Poco urgente">Poco urgente</option>
+                  </select>
+                    <br>
+                    <br>
+
+
+                    <input type="date" name="fecha" id="fecha">
+                    <br>
+                    <br>
+                    <input type="button" name="guardar" id="guardar" value="Guardar">
+                </form>
+            </section>
+
+        </div>
+
+
+
+        <div class="main">
+            <h2>Lista de tareas</h2>
+
+
+            <table id="customers">
+                <thead>
+                    <th>ID</th>
+                    <th>Descripcion</th>
+                    <th>Urgencia</th>
+                    <th>Fecha</th>
+                    <th>Operaciones</th>
+                </thead>
+                <tbody id="mytable">
+
+                    <section id="datos">
+
+
+                    </section>
+                </tbody>
+            </table>
+
+        </div>
+
+        <div class="side">
+
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        <h5>2020</h5>
+    </div>
+    </div>
+    </div>
+
+
+
+</body>
+
+</html>

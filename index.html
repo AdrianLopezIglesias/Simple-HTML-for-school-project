@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>La Soja (Glycine max)</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+
+    <!-- Header -->
+    <div class="header">
+        <h1>La Soja (Glycine max)</h1>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html">Acerca</a>
+        <a href="consumo.html">Como consumirla</a>
+        <a href="propiedades.html">Propiedades</a>
+        <a href="lista.html">Lista</a>
+    </div>
+
+    <!-- The flexible grid (content) -->
+    <div class="row">
+        <div class="side">
+
+
+        </div>
+        <div class="main">
+
+            <h2>Descripción</h2>
+            <p>Glycine max, llamada popularmente soja en España y Argentina​, es una especie de la familia de las leguminosas. Se cultiva por sus semillas, de alto contenido de proteína. El grano de soja y sus subproductos se utilizan en la alimentación
+                humana, del ganado y aves. Se comercializa en todo el mundo debido a sus múltiples usos.</p>
+            <p> El cultivo de soja, además de ser un factor muy valioso, ayuda al ser humano si se efectúa en el marco de un cultivo por rotación estacional, ya que fija el nitrógeno en los suelos, agotados tras haberse practicado otros cultivos intensivos.
+                En cambio, el monocultivo de soja acarrea desequilibrios ecológicos y económicos si se mantiene prolongadamente y en grandes extensiones.</p>
+
+
+
+
+            <h2>Ranking de productores de soja a nivel mundial (1961 a 2018)</h2>
+            <div id="video-container">
+                <!-- Video -->
+                <video muted id="Video-Cielo" src="video.mp4" type="video/mp4" style="width: 100%">
+                    </video>
+                <!-- Video Controls -->
+                <div id="video-control">
+                    <div class="row controlador-video">
+                        <button type="button" style="font-size: 26px" onclick="reproducir()" id="Reproducir"><i
+                            class='bx bx-play'></i></button>
+                        <button type="button" style="font-size: 26px" onclick="saltar(-5)" id="Retroceder"><i
+                            class='bx bx-rewind'></i></button>
+                        <button type="button" style="font-size: 26px" onclick="saltar(+5)" id="Adelantar"><i
+                            class='bx bx-fast-forward'></i></button>
+                        <button type="button" style="font-size: 26px" onclick="detener()" id="Detener"><i
+                            class='bx bx-stop'></i></button>
+                    </div>
+                </div>
+                <p>Video proporcionado por https://www.youtube.com/watch?v=yxKMR-q-28w</p>
+            </div>
+
+
+            <h2>Por que consumirla</h2>
+            <p>Tiene un alto contenido de proteínas de buena calidad. Algunos de sus derivados se consumen en substitución de los productos cárnicos. Los adultos necesitan ingerir con la dieta 8 aminoácidos (los niños 9) de los 20 necesarios para fabricar
+                proteínas. Las proteínas más completas, es decir, con todos los aminoácidos necesarios, suelen encontrarse en los alimentos de origen animal. Sin embargo la soja aporta los 8 aminoácidos esenciales en la edad adulta, aunque el aporte de
+                metionina sea algo escaso; pero esto puede compensarse fácilmente incluyendo semillas de sésamo (con relativa alta concentración de metionina), cereales (como avena, maíz o arroz negro), frutos secos (como cacahuetes y almendras) o legumbres
+                en la alimentación diaria. </p>
+
+
+            <h2>Difusión</h2>
+            <p>Hasta principios del siglo XX el cultivo y la alimentación humana con vaina de soja y sus derivados se reducía a los territorios de las actuales China, Taiwán, Corea, Japón y Vietnam. Su difusión en Occidente se debe en gran medida a los estudios
+                del estadounidense George W. Carver, que no solo valoró su uso para la alimentación humana, sino que fue uno de los pioneros en plantear el uso de derivados de soja para producir plásticos y combustibles (en especial biodiésel). Sin embargo,
+                el cultivo masivo en Occidente (en particular en el Medio Oeste estadounidense y en diversas zonas agrícolas de Argentina, Brasil, Oriente de Bolivia, Uruguay y Paraguay) comenzó apenas en los años 1970, para llegar a tener en los años
+                1990 un auge extremado; substituyendo en muchos casos territorios antes dedicados a los auténticos cereales (trigo, maíz, etc.) o a la ganadería e, incluso, amenazando áreas forestales. Existe una confusión generalizada de la equivalencia
+                entre “soja amarilla” (Glycine max) y “soja verde” (Vigna radiata). </p>
+            <ul>
+
+
+        </div>
+        <div class="side">
+
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        <h5>2020</h5>
+    </div>
+    </div>
+    </div>
+
+
+
+</body>
+
+</html>
+
+<script src="video-control.js"></script>

@@ -1,0 +1,159 @@
+/*
+The CSS box-sizing property allows us to include the padding and border in an element's total width and height.
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Estilo general */
+
+body {
+    font-family: Arial;
+    margin: 0;
+    position: relative;
+    min-height: 100vh;
+}
+
+
+/* Header */
+
+.header {
+    padding: 60px;
+    text-align: center;
+    background: #1abc9c;
+    background-image: url("https://s1.eestatic.com/2015/01/12/cocinillas/Cocinillas_2759786_115880561_1706x960.jpg");
+    color: white;
+}
+
+
+/* Top NavBar */
+
+.navbar {
+    display: flex;
+    background-color: #333;
+    align-items: center;
+    justify-content: center;
+}
+
+.controlador-video {
+    align-items: center;
+    justify-content: center;
+    padding-top: 2px;
+    padding-bottom: 16px;
+}
+
+
+/* Top NavBar Links */
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    transition-property: background-color, color;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+}
+
+
+/* Top NavBar Links Hover */
+
+.navbar a:hover {
+    background-color: #1abc9c;
+    color: #fff;
+    transition-property: background-color, color;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+}
+
+
+/* Contenedor de columnas 
+  Como quiero que el contenido dentro de .row se posicione horizontalmente no tengo que especificar la caracteristica flex-direction, ya que está por default es horizontal.  
+  */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 70px;
+}
+
+
+/* Contenido general */
+
+
+/* Sidebar que ocupa el 30% de la pantalla (dentro de .row) */
+
+.side {
+    flex: 20%;
+    padding: 20px;
+}
+
+
+/* Columna principal de entradas que ocupa el 70% restante (dentro de .row) */
+
+.main {
+    flex: 60%;
+    background-color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+/* Contenedor de las distintas entradas en la columna .main */
+
+.post {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #eebb55;
+    border-radius: 7pt;
+    background-color: #fff;
+}
+
+
+/* Pie de página */
+
+.footer {
+    padding: 2px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    background: #333;
+    color: white;
+}
+
+
+/* Layout responsive. 
+  
+  Cuando la pantalla es menor a 700px de ancho las dos columnas de Main y la Navbar se apilan para que entren en la pantalla.
+  
+  Esto lo logramos modificando la caracteristica "flex-direction" dentro de .row (que contiene a .sidebar y.main) y .navbar 
+  */
+
+@media screen and (max-width: 700px) {
+    .row,
+    .navbar {
+        flex-direction: column;
+    }
+}
+
+
+/* IMAGENES */
+
+.columna-imagenes {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
+}
+
+img {
+    transition: .5s ease;
+    width: 50%;
+}
+
+img:hover {
+    width: 100%;
+    transition: .5s ease;
+}
